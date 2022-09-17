@@ -1,6 +1,6 @@
 {
   "private": true,
-  "homepage": "https://Bhrugu14.github.io/my-demo",
+  "homepage": "https://Bhrugu14.github.io/MyDemo",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
