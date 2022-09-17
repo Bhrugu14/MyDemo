@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
   return (
     <div className="wrapper">
-      <p>Ripple Buttons with Toast</p>
+      <h2>Ripple Buttons with Toast</h2>
       <section
         style={{
           display: "flex",
