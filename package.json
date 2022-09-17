@@ -1,12 +1,13 @@
 {
-  "private": true,
+  "private": false,
   "homepage": "https://Bhrugu14.github.io/MyDemo",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d .next"
+    "export": "next export",
+    "predeploy": "npm run build && next export && touch ./out/.nojekyll",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "cross-env": "^7.0.2",
