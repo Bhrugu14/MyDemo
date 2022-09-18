@@ -21,7 +21,7 @@ export default function Home() {
       >
         <RippleButton
           style={{ backgroundColor: "grey" }}
-          onclickButton={() => toast.info("Love you Hiral")}
+          onclickButton={() => toast.info("Information Toast!")}
           title={"info"}
         />
         <RippleButton
