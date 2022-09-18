@@ -5,11 +5,13 @@ import { RippleButton } from "../component";
 export default function Home() {
   const router = useRouter();
   return (
-    <div className="wrapper">
+    <div style={{ height: "100%", width: "100%" }}>
       <h2>Ripple Buttons with Toast</h2>
       <section
         style={{
           display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
           flex: 1,
           flexDirection: "row",
           height: "40%",
@@ -19,7 +21,7 @@ export default function Home() {
       >
         <RippleButton
           style={{ backgroundColor: "grey" }}
-          onclickButton={() => toast.info("Information Toast!")}
+          onclickButton={() => toast.info("Love you Hiral")}
           title={"info"}
         />
         <RippleButton

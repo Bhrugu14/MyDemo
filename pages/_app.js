@@ -2,8 +2,9 @@ import Head from "next/head";
 import { PageTransition } from "next-page-transitions";
 import "../styles/globals.css";
 import "react-toastify/dist/ReactToastify.css";
+import { Layout } from "../component/Layout";
 
-const TIMEOUT = 400;
+const TIMEOUT = 500;
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -22,7 +23,9 @@ function MyApp({ Component, pageProps }) {
         }}
         loadingClassNames="loading-indicator"
       >
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </PageTransition>
       <style jsx global>{`
         .page-transition-enter {

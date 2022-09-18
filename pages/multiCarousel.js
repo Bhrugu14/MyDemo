@@ -2,7 +2,6 @@ import { NavBar } from "../component";
 const MultiCarousel = () => {
   return (
     <div className="mainContainer">
-      <NavBar />
       <div
         style={{
           display: "flex",

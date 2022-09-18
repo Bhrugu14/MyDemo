@@ -14,10 +14,18 @@ body {
   place-items: center;
   text-align: center;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   place-items: center;
+  flex-direction: column;
   text-align: center;
   height: 100vh;
+  width: 100vw;
 }
 .ripple-button {
   position: relative;
